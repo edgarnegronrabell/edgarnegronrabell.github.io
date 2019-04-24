@@ -3,16 +3,33 @@
       <head>
       <title>Test Page: Don't Panic</title>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100" rel="stylesheet"> 
+      <link rel="stylesheet"
+      href="/fonts/fontawesome-free-5.8.1-web/css/all.css">
       <link rel="stylesheet" href="/css/reset.css">
       <link rel="stylesheet" href="/css/main.css">
+    
     </head>
   <body>
     <header class="header">
     <nav>
+        <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+        <label for="movile-menu" class="show-mobile-menu">Menu</label>
         <ul class="header-nav nav-links">
            <li><a href="/index.html">Home </a></li>
-<li><a href="/gallery/index.html">Gallery</a></li>
-<li><a href="/blog/index.html">Blog</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li class="dropdown">
+  <a href="/blog" class="drop-trigger">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2019/04/22/title-of-second-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2019/04/21/title-of-post.html">Ishmael 1</a></li>
+    
+  </ul>
+</li>
 <li><a href="/2019/04/22/title-of-second-post.html">Newest Post</a></li>
         </ul>
     </nav>
@@ -28,13 +45,19 @@
       <h1>CODE DANGEROUSLY</h1>
       <ul class="social-list">
         <li>
-          <a href="http://example.com/" class="social-link nav-links">Fb</a>
+          <a href="https://facebook.com/learnenough" class="social-link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
         </li>
         <li>
-          <a href="http://example.com/" class="social-link nav-links">Tw</a>
+          <a href="https://twitter.com/learnenough" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
         </li>
         <li>
-          <a href="http:i9//example.com/" class="social-link nav-links">Gh</a>
+          <a href="https://github.com/learnenough" class="social-link">
+          <i class="fab fa-github"></i>
+          </a>
         </li>         
       </ul>
     </div>
@@ -82,13 +105,14 @@
         <div class="post-byline">
           <img src="https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150" alt="Michael Hartl">
           <a href="https://twitter.com/mhartl"
-          class="social-link">Tw</a>
+          class="social-link">
+          <i class="fab fa-twitter"></i></a>
           by: Me, Myself and I
           <span> - April 22, 2019</span>
         </div>
       </header>
       <div class="posts-image" 
-      style="background-image: url(/images/shark.jpg)"></div>
+      style="background-image: url('/images/shark.jpg')"></div>
       <p>Call me <em>Ishmael</em>. Some years ago–<em>never mind how long
 precisely</em>–having little or no money in my purse, and nothing
 particular to interest me on shore, I thought I would sail about a little
@@ -113,7 +137,7 @@ the spleen and regulating the circulation.</p>
       <img src="http://placekitten.com/g/400/400" alt="Cute cat">
       <h3>Michael Hartl</h3>
       <a href="http://twitter.com/mhartl" class="social-link">
-        Tw
+        <i class="fab fa-twitter"></i>
       </a>
       <div class="bio-copy">
         <p>
@@ -137,7 +161,7 @@ the spleen and regulating the circulation.</p>
       <img src="http://placekitten.com/g/400/400">
       <h3>Lee Donahoe</h3>
       <a href="https://twitter.com/leedonahoe" class="social-link">
-        Tw
+        <i class="fab fa-twitter"></i>
       </a>
       <div class="bio-copy">
         <p>
@@ -152,7 +176,7 @@ the spleen and regulating the circulation.</p>
       <img src="http://placekitten.com/g/400/400">
       <h3>Nick Merwin</h3>
       <a href="https://twitter.com/nickmerwin" class="social-link">
-        Tw
+        <i class="fab fa-twitter"></i>
       </a>
       <div class="bio-copy">
           <p>
@@ -175,8 +199,18 @@ the spleen and regulating the circulation.</p>
     <nav>
       <ul class="footer-nav nav-links">
         <li><a href="/index.html">Home </a></li>
-<li><a href="/gallery/index.html">Gallery</a></li>
-<li><a href="/blog/index.html">Blog</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li class="dropdown">
+  <a href="/blog" class="drop-trigger">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2019/04/22/title-of-second-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2019/04/21/title-of-post.html">Ishmael 1</a></li>
+    
+  </ul>
+</li>
 <li><a href="/2019/04/22/title-of-second-post.html">Newest Post</a></li>
       </ul>
       <ul>
